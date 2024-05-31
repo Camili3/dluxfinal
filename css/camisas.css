@@ -410,6 +410,11 @@ h1 {
     color: #fff;
 }
 
+.notes {
+    width: 100%;
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del área de texto */
+    resize: none; /* Desactiva la capacidad de redimensionar */
+}
 
 
 @media screen and (max-width: 1300px) {

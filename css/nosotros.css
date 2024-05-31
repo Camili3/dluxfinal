@@ -7,7 +7,7 @@ body {
     justify-content: center; /* Centrar horizontalmente el contenido */
     align-items: center; /* Centrar verticalmente el contenido */
     width: auto;
-    height: 2000px;
+
 }
 
 
@@ -202,7 +202,7 @@ h1 {
 /* Footer */
 .footer {
 
-   position: bottom;
+   position: end;
     bottom: 0;
     width: 100%;
     background-color: #463018;
