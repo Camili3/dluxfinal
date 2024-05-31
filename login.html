@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - D-Lux Designs</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js"></script>
+    <script src="js/image.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo" onclick="window.location.href='index.html'"></div>
+        <div class="text-links-container">
+            <a href="catalogo.html" class="text">Catálogos</a>
+            <a href="nosotros.html" class="text">Sobre Nosotros</a>
+        </div>
+        <div class="buttons">
+     
+           
+            <button id="logoutBtn" onclick="window.location.href='index.html'">Cerrar Sesión</button>
+        
+        </div>
+    </header>
+
+    <!-- Contenido del formulario de inicio de sesión -->
+    <form action="php/login_usuario_be.php" method="POST" class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <input type="text" placeholder="Correo Electrónico" name="correo" required>
+        <input type="password" placeholder="Contraseña" name="contrasena" required>
+        <button type="submit">Iniciar Sesión</button>
+        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+    </form>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 D-Lux Designs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+ 
+</body>
+
+</html>
+

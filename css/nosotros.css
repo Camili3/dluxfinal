@@ -1,0 +1,294 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFDECA;
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    width: auto;
+    height: 2000px;
+}
+
+
+/* Estilos de la cabecera */
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
+   
+    background-color: #463018;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/dlux2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-links-container {
+    display: flex;
+    margin-right: auto; /* Empujar hacia la derecha */
+}
+
+.text {
+    margin: 20px;
+    text-decoration: none;
+    color: #EFDECA;
+    cursor: pointer; 
+}
+
+.text:hover {
+    color: #CE9859;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px #EFDECA; 
+    background-color: #463018 ;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#regbutton {
+    background-color: #EFDECA ;
+    color: #463018;
+}
+
+.buttons button:hover {
+    background-color: #EFDECA; 
+    color: #463018;
+}
+
+.buttons #regbutton:hover {
+    background-color: #463018; 
+    color: #EFDECA;
+}
+
+.logout {
+    margin: 20px;
+    display: none;
+}
+
+.logout button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px #EFDECA; 
+    background-color: #463018 ;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    background-color: #EFDECA; 
+    color: #463018;
+}
+
+
+/* Estilos del logotipo */
+.logoprin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoprin img {
+    max-width: 33%;
+    max-height: 33%;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    background-color: #EFDECA;
+    width: 100%;
+    
+}
+
+.product {
+    width: 300px;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #CE9859;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product h2 {
+    color: #CE9859;
+}
+
+.product p {
+    color: #555;
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #CE9859;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #B36C64;
+}
+
+/*seccion contenido*/
+.about-us-sec{
+
+   
+        display: flex;
+        justify-content: center;
+        background-color: #EFDECA;
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+     
+}
+
+.about-us-content{
+    width: 70em;
+    margin: 40px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.about-us-content h2 {
+    color: #CE9859;
+}
+
+.about-us-content p {
+    color: #555;
+    text-align: justify;
+}
+
+.about-us {
+    background-color: #CE9859;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+/* Footer */
+.footer {
+
+   position: bottom;
+    bottom: 0;
+    width: 100%;
+    background-color: #463018;
+    color: #EFDECA;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Añadir relleno para separar el contenido del borde del footer */
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Añade espacio debajo de cada línea */
+}
+
+.info-title {
+    display: block; /* Hace que cada título esté en una línea separada */
+    font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+.social-media {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 27px;
+    margin-left: 100px;
+}
+
+i{
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    margin-right: 100px;
+    border-radius: 40%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
+    transition: .3s ease;
+}
+.fa-whatsapp:hover{
+    background-color: rgb(22, 194, 22);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(22, 194, 22),
+                0px 0px 45px rgb(22, 194, 22),
+                0px 0px 75px rgb(22, 194, 22),
+                0px 0px 115px rgb(22, 194, 22);
+}
+.fa-facebook:hover{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(0, 0, 255),
+                0px 0px 45px rgb(0, 0, 255),
+                0px 0px 75px rgb(0, 0, 255),
+                0px 0px 115px rgb(0, 0, 255);
+}
+.fa-instagram:hover{
+    background-color: rgb(228, 85, 3);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(228, 85, 3),
+                0px 0px 45px rgb(228, 85, 3),
+                0px 0px 75px rgb(228, 85, 3),
+                0px 0px 115px rgb(228, 85, 3);
+}
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+
+
+
+    .text-links-container {
+
+        align-items: center;
+    margin-right: 0px;
+    }
+
+
+    }
+
+}
+

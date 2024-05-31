@@ -1,0 +1,260 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFDECA;
+}
+
+.container {
+    width: 90%;
+    max-width: 1520px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
+   
+    background-color: #463018;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/dlux2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.text-links-container {
+    display: flex;
+    margin-right: auto;
+}
+
+.text {
+    margin-left: 60px;
+    text-decoration: none;
+    color: #EFDECA;
+    cursor: pointer; 
+}
+
+.text:hover {
+    color: #CE9859;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #463018;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#regbutton {
+    background-color: #EFDECA;
+    color: #463018;
+}
+
+.buttons button:hover {
+    background-color: #EFDECA;
+    color: #463018;
+}
+
+
+.logout {
+    margin: 20px;
+    display: none;
+}
+
+.logout button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px #EFDECA; 
+    background-color: #463018 ;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    background-color: #EFDECA; 
+    color: #463018;
+}
+
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #463018;
+    color: #EFDECA;
+    padding: 20px 0; /* Aumentar el padding vertical */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 90%; /* Reducir el ancho */
+}
+
+/* Estilos específicos para el formulario de inicio de sesión y registro */
+.login-form,
+.registro-form {
+    background-color: #EFDECA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 550px; /* Reducir el ancho */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 50px; /* Añadir margen superior */
+    margin-bottom: 50px; /* Añadir margen inferior */
+    display: flex; /* Utilizar flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+
+.login-form h2,
+.registro-form h2 {
+    margin-bottom: 20px;
+    color: #463018;
+    text-align: center; /* Centrar el título */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.registro-form input[type="text"],
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+    width: calc(100% - 20px); /* Ajustar el ancho */
+    padding: 10px;
+    margin: 0 auto 10px; /* Añadir espacio inferior */
+    display: block;
+    border: 1px solid #463018;
+    border-radius: 5px;
+}
+
+.login-form button,
+.registro-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #463018;
+    color: #EFDECA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Añadir espacio superior */
+}
+
+.login-form button:hover,
+.registro-form button:hover {
+    background-color: #CE9859;
+}
+
+.login-form p,
+.registro-form p {
+    margin-top: 20px; /* Aumentar el espacio superior */
+    text-align: center; /* Centrar el texto */
+}
+
+.login-form a,
+.registro-form a {
+    color: #CE9859;
+    text-decoration: none;
+}
+
+.login-form a:hover,
+.registro-form a:hover {
+    text-decoration: underline;
+}
+    
+@media screen and (max-width: 600px) {
+
+    /* Estilo para la flecha */
+    .arrow {
+    
+        left: -4%; /* La alineamos a la derecha del elemento padre con un margen del 5% */
+    
+    }
+    
+    .text-links-container {
+    
+            align-items: center;
+        margin-right: 0px;
+    }
+    
+    
+        .header {
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .menu-toggle:checked + .menu {
+            display: flex;
+        }
+        .menu-icon {
+            display: block;
+            margin-left: auto;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .text {
+            margin: 10px;
+        }
+        .colebot {
+            text-align: center;
+        }
+        .textosdesc {
+            flex-direction: column;
+            margin: 20px;
+    
+        }
+        .productos .navidad{
+            flex-direction: column;
+        }
+        .productos .thumb {
+            margin-right: 0px;
+          }
+        .textosdesc > div {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .descripcion-container {
+            text-align: center;
+        }
+        .vermasbot {
+            margin: 0 auto;
+        }
+        .productos .descripcion {
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+        }
+        .content {
+            padding: 10px;
+        }
+        .footer {
+            text-align: center;
+        }
+    }

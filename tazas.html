@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazas - D-Lux Designs</title>
+    <link rel="stylesheet" href="css/camisas.css">
+    <script src="js/script.js"></script>
+    <script src="js/image.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo" onclick="window.location.href='index.html'"></div>
+        <nav class="text-links-container">
+            <a href="catalogo.html" class="text">Catálogos</a>
+            <a href="nosotros.html" class="text">Sobre Nosotros</a>
+        </nav>
+        <div class="buttons">
+            <button id="login" onclick="window.location.href='login.html'">Iniciar Sesión</button>
+            <button id="register" onclick="window.location.href='registro.html'">Registrarse</button>
+           
+            <button id="logoutBtn" onclick="window.location.href='index.html'">Cerrar Sesión</button>
+        
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="producto_title">
+            <h1>Tazas</h1>
+        </section>
+        <section class="producto_sec">
+            <figure class="productoimg">
+                <img src="images/mug.png" alt="Taza Personalizada">
+            </figure>
+        </section>
+
+        <section class="producto_content">
+            <article class="Articulo">
+                <h2>Tazas personalizables</h2>
+                <h2>Precio</h2>
+                <p class="Precio">$15000</p>
+                <h2>Descripción</h2>
+                <p class="Descripcion">¡Personaliza tu taza a tu gusto! Diseña cada detalle para reflejar tu estilo único y crear piezas verdaderamente tuyas. Nuestras tazas son de cerámica de alta calidad.</p>
+                <h2>Color</h2>
+                <p class="Color">Color: Blanco - Negro - Azul - Rojo</p>
+            </article>
+            <figure class="productoimg2">
+                <img src="images/taza.png" alt="Taza Personalizada">
+            </figure>
+        </section>
+
+        <section class="producto_content">
+            <div class="BodyE">
+                <div class="TextoConBoton">
+                    <h2 class="TemporadaNavideña">Haz tu pedido ahora mismo...</h2>
+                    <p class="Descripción">¡Si las tazas personalizadas han conquistado tu corazón, asegura la tuya agendando tu pedido hoy mismo! Añade un toque de originalidad a tu actitud con estas increíbles tazas.</p>
+                    <div class="Boton">
+                        <div class="butpedido">
+                            <a href="https://api.whatsapp.com/message/KGSWLBKPEMFFE1?autoload=1&app_absent=0"><button>Hacer Pedido</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Sección de invitación para usuarios no logeados -->
+            <section class="invite-section" style="display: none;">
+                <h2>¿Quieres subir tus propios diseños?</h2>
+                <button onclick="window.location.href='registro.html'">Regístrate aquí</button>
+            </section>
+
+        
+            <section class="upload-section">
+                <h2>Sube tu propio diseño</h2>
+                <form id="uploadForm" action="php/imagenes.php" method="POST" enctype="multipart/form-data">
+                    <label for="designUpload">Selecciona una imagen:</label>
+                    <input name="imagen" id="imagen" type="file" value="inserta_archivo">
+                    <div class="preview-container">
+                        <img id="designPreview" src="#" alt="Vista previa del diseño" style="display: none;">
+                    </div>
+                    <label for="designNotes">Notas del pedido:</label>
+                    <textarea id="designNotes" name="notas" rows="4" cols="50"></textarea>
+                    <button type="submit">Subir Diseño</button>
+                </form>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 D-Lux Designs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

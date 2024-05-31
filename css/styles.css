@@ -1,0 +1,583 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFDECA;
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    width: auto;
+    height: 2000px;
+}
+
+/* Estilos de la cabecera */
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
+   
+    background-color: #463018;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/dlux2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-links-container {
+    display: flex;
+    margin-right: auto; /* Empujar hacia la derecha */
+}
+
+.text {
+    margin-left: 60px;
+    text-decoration: none;
+    color: #EFDECA;
+    cursor: pointer; 
+}
+
+.text:hover {
+    color: #CE9859;
+}
+
+.buttons {
+    display: flex;
+    margin: 20px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px #EFDECA; 
+    background-color: #463018 ;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#regbutton {
+    background-color: #EFDECA ;
+    color: #463018;
+}
+
+.buttons button:hover {
+    background-color: #EFDECA; 
+    color: #463018;
+}
+
+.buttons #regbutton:hover {
+    background-color: #463018; 
+    color: #EFDECA;
+}
+
+
+.logout {
+    margin: 20px;
+    display: flex;
+}
+
+.logout button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 0 1px #EFDECA; 
+    background-color: #463018 ;
+    color: #EFDECA;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    background-color: #EFDECA; 
+    color: #463018;
+}
+
+
+
+/* Estilos del logotipo */
+.logoprin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoprin img {
+    max-width: 33%;
+    max-height: 33%;
+}
+
+/* Estilos del botón "Colección" */
+.colebot {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 40px;
+}
+
+.colebot button {
+    padding: 10px 20px;
+    background-color: #CE9859;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.colebot button:hover {
+    background-color: #B36C64; /* Cambio de color al hacer hover */
+}
+
+/* Estilos del texto de descripción */
+.textosdesc {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row; /* Disposición horizontal */
+    align-items: center; /* Centrar verticalmente los elementos */
+    justify-content: space-between; /* Distribuir los elementos uniformemente */
+    margin-top: 0px;
+    gap: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 35px; /* Margen izquierdo */
+    margin-right: 35px; /* Margen derecho */
+}
+
+
+.descripcion strong span {
+    font-size: 40px; /* Cambiar el tamaño de la fuente */
+}
+
+h2 {
+    padding: 5px;
+    color: #CE9859;
+    text-align: center;
+    margin: 0; /* Eliminar el margen predeterminado */
+    line-height: 1.5; /* Modificar el interlineado */
+    font-size: 25px;
+}
+
+p {
+    color: #555;
+    font-size: 17px;
+}
+
+/* Estilos del botón "Ver Más" */
+.vermasbot button {
+    padding: 10px 20px;
+    background-color: #CE9859;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 40px; /* Ajusta este valor según sea necesario */
+}
+
+/* Alineación vertical de los botones "Ver Más" */
+.vermasbot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descubrebot button {
+    padding: 10px 20px;
+    background-color: #CE9859;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 40px; /* Ajusta este valor según sea necesario */
+}
+
+.descubrebot{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.descubrebot button:hover {
+    background-color: #B36C64;
+}
+
+
+.vermasbot button:hover {
+    background-color: #B36C64;
+}
+
+
+.productos {
+    background-color: rgba(195, 170, 141, 0.68);
+    color: #EFDECA;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productos .mugs {
+    display: flex;
+    align-items: center;
+}
+
+.productos .thumb1 {
+    margin-right: 20px;
+}
+
+.productos .descripcionmug {
+    color: #B36C64;
+    width: 50%; /* O ajusta el ancho según sea necesario */
+    line-height: 1.5; /* Ajusta el valor según sea necesario */
+}
+
+
+.productos .navidad {
+    display: flex;
+    align-items: center;
+    margin: 35px;
+}
+
+
+.productos .product-info {
+    display: flex;
+    align-items: center;
+}
+
+.productos .thumb {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.productos .thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.productos .descripcion {
+    color: #B36C64;
+    width: 50%; /* O ajusta el ancho según sea necesario */
+    line-height: 1.5; /* Ajusta el valor según sea necesario */
+}
+
+.faq {
+    background-color: #EFDECA;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+}
+
+.faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq li {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    margin-bottom: 10px;
+}
+
+/* Arreglo de botones "Descubre más" */
+.vermasbot button {
+    padding: 10px 20px;
+    background-color: #CE9859;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vermasbot button:hover {
+    background-color: #B36C64;
+}
+
+.faq li .answer {
+    display: none;
+}
+
+.faq li .answer.active {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1520px;
+    margin: 20px auto; /* Ajustar el margen externo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para el título de Preguntas Frecuentes */
+.preguntastitulo {
+    width: 100%;
+    height: auto;
+    background-color: #CE9859;
+    color: white;
+    font-size: 24px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 0; /* Ajustar el relleno */
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada pregunta */
+.question {
+    width: 90%; /* Ancho del contenedor de la pregunta */
+    max-width: 600px; /* Ancho máximo */
+    background-color: #EFDECA;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre preguntas */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para el texto de cada pregunta */
+.question-text {
+    position: relative; /* Hacemos que el elemento padre para la flecha sea relativo */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.80);
+ /* Tamaño de fuente ajustado */
+    font-family: Montserrat, Arial, sans-serif; /* Fuente ajustada */
+    font-weight: 400;
+    line-height: 1.5; /* Espaciado de línea */
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Alinear las preguntas en una columna */
+    align-items: center; /* Centrar horizontalmente */
+    width: 100%; /* Ancho completo del contenedor */
+}
+/* Estilo para la flecha */
+.arrow {
+    position: absolute; /* Hacemos que la flecha sea absoluta para que se posicione correctamente */
+    left: -10%; /* La alineamos a la derecha del elemento padre con un margen del 5% */
+    top: 50%; /* La alineamos verticalmente en el centro */
+    transform: translateY(-50%); /* Corregimos la posición vertical */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+    transition: transform 0.3s; /* Agrega una transición suave */
+    font-size: 30px; /* Tamaño de la flecha como un porcentaje del ancho de la ventana */
+}
+
+/* Estilo para la respuesta */
+.answer {
+    display: none; /* Oculta la respuesta por defecto */
+    text-align: center; /* Centra el texto de la respuesta */
+    margin-top: 3vw; /* Margen superior relativo al tamaño de la ventana */
+}
+/* Estilo para el texto de la respuesta */
+.answer p {
+    margin: 10px 0; /* Añade espacio alrededor del texto de la respuesta */
+    color: rgba(0, 0, 0, 0.80); /* Mismo color que la pregunta */
+    font-size: 24px; /* Mismo tamaño de fuente que la pregunta */
+    font-family: Montserrat, Arial, sans-serif; /* Mismo tipo de fuente que la pregunta */
+    font-weight: 400; /* Mismo peso de fuente que la pregunta */
+    line-height: 1.5; /* Mismo espaciado de línea que la pregunta */
+}
+
+/* Estilo para la respuesta cuando está activa */
+.answer.active {
+    display: block; /* Mostrar la respuesta cuando está activa */
+    /* Agrega cualquier estilo adicional que desees para la respuesta activa */
+}
+
+/* Cambio de estilo de la flecha al abrir la respuesta */
+.question.open .arrow {
+    transform: rotate(180deg); /* Rota la flecha hacia arriba */
+}
+
+/* Footer */
+.footer {
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    background-color: #463018;
+    color: #EFDECA;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px; /* Añadir relleno para separar el contenido del borde del footer */
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px; /* Añade espacio debajo de cada línea */
+}
+
+.footer p {
+    display: block; /* Hace que cada título esté en una línea separada */
+    font-weight: bold; /* Hace que el texto esté en negrita */
+    font-style: normal;
+    color: #EFDECA;
+}
+
+.social-media {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 27px;
+    margin-left: 100px;
+}
+
+i{
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    margin-right: 100px;
+    border-radius: 40%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
+    transition: .3s ease;
+}
+.fa-whatsapp:hover{
+    background-color: rgb(22, 194, 22);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(22, 194, 22),
+                0px 0px 45px rgb(22, 194, 22),
+                0px 0px 75px rgb(22, 194, 22),
+                0px 0px 115px rgb(22, 194, 22);
+}
+.fa-facebook:hover{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(0, 0, 255),
+                0px 0px 45px rgb(0, 0, 255),
+                0px 0px 75px rgb(0, 0, 255),
+                0px 0px 115px rgb(0, 0, 255);
+}
+.fa-instagram:hover{
+    background-color: rgb(228, 85, 3);
+    color: white;
+    box-shadow: 0px 0px 15px rgb(228, 85, 3),
+                0px 0px 45px rgb(228, 85, 3),
+                0px 0px 75px rgb(228, 85, 3),
+                0px 0px 115px rgb(228, 85, 3);
+}
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+    }
+@media screen and (max-width: 600px) {
+
+/* Estilo para la flecha */
+.arrow {
+
+    left: -4%; /* La alineamos a la derecha del elemento padre con un margen del 5% */
+
+}
+
+.text-links-container {
+
+        align-items: center;
+	margin-right: 0px;
+}
+
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+	
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .menu-toggle:checked + .menu {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .text {
+        margin: 10px;
+    }
+    .colebot {
+        text-align: center;
+    }
+    .textosdesc {
+        flex-direction: column;
+        margin: 20px;
+
+    }
+    .productos .navidad{
+        flex-direction: column;
+    }
+    .productos .thumb {
+        margin-right: 0px;
+      }
+    .textosdesc > div {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .descripcion-container {
+        text-align: center;
+    }
+    .vermasbot {
+        margin: 0 auto;
+    }
+    .productos .descripcion {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .content {
+        padding: 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+}
